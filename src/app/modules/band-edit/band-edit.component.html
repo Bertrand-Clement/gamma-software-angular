@@ -1,0 +1,70 @@
+<form (ngSubmit)="onSubmit()">
+  <div class="text-center">
+    <div class="mb-3 row">
+      <label class="col-form-label col-sm-2 required" for="name">Nom du groupe</label>
+      <div class="col-sm-10">
+        <input type="text" id="name" name="name" required="required" class="form-control" [(ngModel)]="band.name">
+      </div>
+    </div>
+    <div class="mb-3 row">
+      <label class="col-form-label col-sm-2 required" for="origin">Origine</label>
+      <div class="col-sm-10">
+        <input type="text" id="origin" name="origin" required="required" class="form-control" [(ngModel)]="band.origin">
+      </div>
+    </div>
+    <div class="mb-3 row">
+      <label class="col-form-label col-sm-2 required" for="city">Ville</label>
+      <div class="col-sm-10">
+        <input type="text" id="city" name="city" required="required" class="form-control" [(ngModel)]="band.city">
+      </div>
+    </div>
+    <div class="mb-3 row">
+      <label class="col-form-label col-sm-2 required" for="startYear">Année de début</label>
+      <div class="col-sm-10">
+        <input type="text" id="startYear" name="startYear" required="required" class="form-control"
+               [(ngModel)]="band.startYear">
+      </div>
+    </div>
+    <div class="mb-3 row">
+      <label class="col-form-label col-sm-2 required" for="separationYear">Année de séparation</label>
+      <div class="col-sm-10"><input type="text" id="separationYear" name="separationYear" required="required"
+                                    class="form-control" [(ngModel)]="band.separationYear">
+      </div>
+    </div>
+    <div class="mb-3 row">
+      <label class="col-form-label col-sm-2 required" for="founders">Fondateurs</label>
+      <div class="col-sm-10">
+        <input type="text" id="founders" name="founders" required="required" class="form-control"
+               [(ngModel)]="band.founders">
+      </div>
+    </div>
+    <div class="mb-3 row">
+      <label class="col-form-label col-sm-2 required" for="members">Membres</label>
+      <div class="col-sm-10">
+        <input type="number" id="members" name="members" required="required" class="form-control"
+               [(ngModel)]="band.members">
+      </div>
+    </div>
+    <div class="mb-3 row">
+      <label class="col-form-label col-sm-2 required" for="musicalStyle">Courant musical</label>
+      <div class="col-sm-10">
+        <input type="text" id="musicalStyle" name="musicalStyle" required="required"
+               class="form-control" [(ngModel)]="band.musicalStyle">
+      </div>
+    </div>
+    <div class="mb-3 row">
+      <label class="col-form-label col-sm-2 required" for="introduction">Présentation</label>
+      <div class="col-sm-10">
+        <textarea id="introduction" name="introduction" required="required" rows="5"
+                  class="form-control" [(ngModel)]="band.introduction">
+        </textarea>
+      </div>
+    </div>
+  </div>
+  <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+    <a routerLink="/" class="btn btn-danger">Annuler</a>
+    <button type="submit" class="btn btn-success">Sauvegarder</button>
+  </div>
+</form>
+
+

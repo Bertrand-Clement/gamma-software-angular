@@ -1,10 +1,10 @@
 import { TestBed } from '@angular/core/testing';
-import { AppComponent } from './app.component';
+import { BandListComponent } from './band-list.component';
 
-describe('AppComponent', () => {
+describe('BandListComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [AppComponent],
+      imports: [BandListComponent],
     }).compileComponents();
   });
 });
